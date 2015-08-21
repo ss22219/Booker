@@ -1,8 +1,7 @@
 ﻿using System;
-using Nancy;
 namespace Booker
 {
-	public class IndexModule : NancyModule
+    public class IndexModule : BaseForeModule
 	{
 		public IndexModule ()
 		{
