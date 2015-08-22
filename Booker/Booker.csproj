@@ -67,8 +67,11 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="app.config" />
-    <None Include="Views\Index\index.cshtml" />
-    <None Include="Views\Status\404.cshtml" />
+    <None Include="content\style.css" />
+    <None Include="views\Index\index.cshtml" />
+    <None Include="views\Status\404.cshtml" />
+    <None Include="scripts\script.js" />
+    <None Include="views\_layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Booker.Module\Booker.Module.csproj">
@@ -81,4 +84,8 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <ItemGroup>
+    <Folder Include="content\" />
+    <Folder Include="scripts\" />
+  </ItemGroup>
 </Project>
