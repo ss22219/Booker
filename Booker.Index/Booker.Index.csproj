@@ -30,11 +30,10 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Nancy, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="System" />
+    <Reference Include="Nancy">
       <HintPath>..\packages\Nancy.1.2.0\lib\net40\Nancy.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -42,8 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Booker.ModuleBase\Booker.ModuleBase.csproj">
-      <Project>{0bff4501-8ca6-47d4-80a9-e36de03371de}</Project>
+      <Project>{0BFF4501-8CA6-47D4-80A9-E36DE03371DE}</Project>
       <Name>Booker.ModuleBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Booker.Database\Booker.Database.csproj">
+      <Project>{464EB640-725A-44ED-8237-9EE7D79535C8}</Project>
+      <Name>Booker.Database</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

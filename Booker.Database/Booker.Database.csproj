@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Booker.Core\Booker.Core.csproj">
-      <Project>{10476060-e282-48ac-9140-3e6594a118a9}</Project>
+      <Project>{10476060-E282-48AC-9140-3E6594A118A9}</Project>
       <Name>Booker.Core</Name>
     </ProjectReference>
   </ItemGroup>

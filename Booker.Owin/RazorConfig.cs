@@ -18,6 +18,7 @@ namespace Booker
 		{
 			//加了这句，才能处理 cshtml
 			yield return "System.Web.Razor";
+			yield return "Booker.Database";
 		}
 
 		/// <summary>

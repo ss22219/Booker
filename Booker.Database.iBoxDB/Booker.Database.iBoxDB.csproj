@@ -41,14 +41,13 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="iBoxDB23.cs" />
     <Compile Include="iBoxDB\BaseDb.cs" />
     <Compile Include="iBoxDB\BookDb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Booker.Database\Booker.Database.csproj">
-      <Project>{464eb640-725a-44ed-8237-9ee7d79535c8}</Project>
+      <Project>{464EB640-725A-44ED-8237-9EE7D79535C8}</Project>
       <Name>Booker.Database</Name>
     </ProjectReference>
   </ItemGroup>

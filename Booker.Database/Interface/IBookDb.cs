@@ -9,6 +9,6 @@ namespace Booker.Database.Interface
 {
     public interface IBookDb : IBaseDb<Book, string>
     {
-
+		List<Book> FindBookByName (string name);
     }
 }
