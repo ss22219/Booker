@@ -68,8 +68,8 @@
     <None Include="packages.config" />
     <None Include="app.config" />
     <None Include="content\style.css" />
-    <None Include="views\Index\index.cshtml" />
-    <None Include="views\Status\404.cshtml" />
+    <None Include="views\index\index.cshtml" />
+    <None Include="views\status\404.cshtml" />
     <None Include="scripts\script.js" />
     <None Include="views\_layout.cshtml" />
   </ItemGroup>
@@ -84,8 +84,5 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
-  <ItemGroup>
-    <Folder Include="content\" />
-    <Folder Include="scripts\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>
