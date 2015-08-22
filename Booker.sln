@@ -8,21 +8,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E743E7
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booker.Core", "Booker.Core\Booker.Core.csproj", "{10476060-E282-48AC-9140-3E6594A118A9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booker.Test", "Booker.Test\Booker.Test.csproj", "{5B1016AF-2622-42C1-96E6-A10AAB370A26}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{C499069C-474F-41A9-AF20-A73649DB245D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booker.Database.iBoxDB", "Booker.Database.iBoxDB\Booker.Database.iBoxDB.csproj", "{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booker.Database", "Booker.Database\Booker.Database.csproj", "{464EB640-725A-44ED-8237-9EE7D79535C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booker.Database.iBoxDB", "Booker.Database.iBoxDB\Booker.Database.iBoxDB.csproj", "{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booker.Module", "Booker.Module\Booker.Module.csproj", "{0BFF4501-8CA6-47D4-80A9-E36DE03371DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booker.Owin", "Booker.Owin\Booker.Owin.csproj", "{44EE1454-DD73-438D-9051-99FBA997F246}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booker", "Booker\Booker.csproj", "{5B123185-E6EC-4AE5-9B2C-D14A0AD1E80F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booker.Common", "Booker.Common\Booker.Common.csproj", "{10476060-E282-48AC-9140-3E6594A118A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booker.Owin", "Booker.Owin\Booker.Owin.csproj", "{44EE1454-DD73-438D-9051-99FBA997F246}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,31 +51,37 @@ Global
 		{10476060-E282-48AC-9140-3E6594A118A9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{10476060-E282-48AC-9140-3E6594A118A9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{10476060-E282-48AC-9140-3E6594A118A9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{10476060-E282-48AC-9140-3E6594A118A9}.Debug|x86.Build.0 = Debug|Any CPU
 		{10476060-E282-48AC-9140-3E6594A118A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10476060-E282-48AC-9140-3E6594A118A9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10476060-E282-48AC-9140-3E6594A118A9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{10476060-E282-48AC-9140-3E6594A118A9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{10476060-E282-48AC-9140-3E6594A118A9}.Release|x86.ActiveCfg = Release|Any CPU
+		{10476060-E282-48AC-9140-3E6594A118A9}.Release|x86.Build.0 = Release|Any CPU
 		{44EE1454-DD73-438D-9051-99FBA997F246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{44EE1454-DD73-438D-9051-99FBA997F246}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44EE1454-DD73-438D-9051-99FBA997F246}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{44EE1454-DD73-438D-9051-99FBA997F246}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{44EE1454-DD73-438D-9051-99FBA997F246}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{44EE1454-DD73-438D-9051-99FBA997F246}.Debug|x86.Build.0 = Debug|Any CPU
 		{44EE1454-DD73-438D-9051-99FBA997F246}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44EE1454-DD73-438D-9051-99FBA997F246}.Release|Any CPU.Build.0 = Release|Any CPU
 		{44EE1454-DD73-438D-9051-99FBA997F246}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{44EE1454-DD73-438D-9051-99FBA997F246}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{44EE1454-DD73-438D-9051-99FBA997F246}.Release|x86.ActiveCfg = Release|Any CPU
+		{44EE1454-DD73-438D-9051-99FBA997F246}.Release|x86.Build.0 = Release|Any CPU
 		{464EB640-725A-44ED-8237-9EE7D79535C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{464EB640-725A-44ED-8237-9EE7D79535C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{464EB640-725A-44ED-8237-9EE7D79535C8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{464EB640-725A-44ED-8237-9EE7D79535C8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{464EB640-725A-44ED-8237-9EE7D79535C8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{464EB640-725A-44ED-8237-9EE7D79535C8}.Debug|x86.Build.0 = Debug|Any CPU
 		{464EB640-725A-44ED-8237-9EE7D79535C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{464EB640-725A-44ED-8237-9EE7D79535C8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{464EB640-725A-44ED-8237-9EE7D79535C8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{464EB640-725A-44ED-8237-9EE7D79535C8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{464EB640-725A-44ED-8237-9EE7D79535C8}.Release|x86.ActiveCfg = Release|Any CPU
+		{464EB640-725A-44ED-8237-9EE7D79535C8}.Release|x86.Build.0 = Release|Any CPU
 		{5B1016AF-2622-42C1-96E6-A10AAB370A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5B1016AF-2622-42C1-96E6-A10AAB370A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B1016AF-2622-42C1-96E6-A10AAB370A26}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -101,15 +107,17 @@ Global
 		{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51}.Debug|x86.Build.0 = Debug|Any CPU
 		{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51}.Release|x86.ActiveCfg = Release|Any CPU
+		{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51} = {C499069C-474F-41A9-AF20-A73649DB245D}
 		{464EB640-725A-44ED-8237-9EE7D79535C8} = {C499069C-474F-41A9-AF20-A73649DB245D}
+		{D1B6AA18-E8E1-4D8E-8388-98561CEFDB51} = {C499069C-474F-41A9-AF20-A73649DB245D}
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

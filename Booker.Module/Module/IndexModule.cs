@@ -9,10 +9,10 @@ namespace Booker
 	{
 		IBookDb bookDb;
 
-		public IndexModule (IBookDb bookDb)
+		public IndexModule (IBookDb bookDB)
 		{
 
-			this.bookDb = bookDb;
+			this.bookDb = bookDB;
 
 			Get["/"] = _ =>{ 
 				var bookName = "book1";
