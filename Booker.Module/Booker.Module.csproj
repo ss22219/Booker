@@ -65,4 +65,10 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="..\Booker.Database\Booker.Database.csproj">
+      <Project>{464EB640-725A-44ED-8237-9EE7D79535C8}</Project>
+      <Name>Booker.Database</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

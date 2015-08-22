@@ -87,6 +87,10 @@
       <Project>{44EE1454-DD73-438D-9051-99FBA997F246}</Project>
       <Name>Booker.Owin</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Booker.Module\Booker.Module.csproj">
+      <Project>{0BFF4501-8CA6-47D4-80A9-E36DE03371DE}</Project>
+      <Name>Booker.Module</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
 </Project>

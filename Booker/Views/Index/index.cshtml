@@ -1,10 +1,11 @@
-﻿@using Booker.Database.Model
-<html>
+﻿<html>
 	<head>
-		<title></title>
+		<title>Hello Nancy!</title>
 	</head>
 	<body>
-		Hello Razor!
 		books count:@Model.Count
+		@foreach (var book in Model) {
+			<p>name: @book.name</p>
+		}
 	</body>
 </html>

@@ -16,13 +16,9 @@ namespace Booker
 {
 	public class Bootstraper : DefaultNancyBootstrapper
 	{
-		public Bootstraper(){
-			Console.WriteLine ("starting...");
-		}
 
 		protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
 		{
-			Console.WriteLine ("ApplicationStartup");
 			base.ApplicationStartup(container, pipelines);
 			StaticConfiguration.Caching.EnableRuntimeViewUpdates = true;
 			StaticConfiguration.DisableErrorTraces = false;
@@ -30,7 +26,6 @@ namespace Booker
 
 		protected override void ConfigureApplicationContainer(TinyIoCContainer container)
 		{
-			Console.WriteLine ("ConfigureApplicationContainer");
 			base.ConfigureApplicationContainer(container);
 			//iboxdb
 			container.Register<AutoBox>(this.BoxDatabase);
@@ -42,7 +37,6 @@ namespace Booker
 
 		protected override void ConfigureConventions(NancyConventions nancyConventions)
 		{
-			Console.WriteLine ("ConfigureConventions");
 			base.ConfigureConventions(nancyConventions);
 			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("scripts"));
 			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("content"));

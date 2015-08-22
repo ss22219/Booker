@@ -8,7 +8,7 @@ namespace Booker
 	{
 		public void Configuration (IAppBuilder appBuilder)
 		{
-			appBuilder.UseNancy (new Nancy.Owin.NancyOptions(){
+			appBuilder.Use<ExceptionMiddleware>().UseNancy (new Nancy.Owin.NancyOptions(){
 				Bootstrapper = new Bootstraper()
 			});
 		}

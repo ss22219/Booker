@@ -10,6 +10,7 @@ namespace Booker
 
 			WebApp.Start<Startup> (url);
 			Console.WriteLine ("server is start on {0}",url);
+			Console.WriteLine ("press enter to exit");
 			Console.ReadLine ();
 		}
 	}
