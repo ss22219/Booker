@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Booker</RootNamespace>
-    <AssemblyName>Booker.ModuleBase</AssemblyName>
+    <AssemblyName>Booker.Module</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -48,6 +48,7 @@
     <Compile Include="Module\BaseModule.cs" />
     <Compile Include="Module\BaseForeModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Module\IndexModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewHelper\" />

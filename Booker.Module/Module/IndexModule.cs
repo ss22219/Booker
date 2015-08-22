@@ -13,7 +13,7 @@ namespace Booker
 		{
 
 			this.bookDb = bookDb;
-			Console.WriteLine ("IndexModule");
+
 			Get["/"] = _ =>{ 
 				var bookName = "book1";
 				var books = bookDb.FindBookByName (bookName);

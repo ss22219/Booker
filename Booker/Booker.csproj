@@ -83,10 +83,6 @@
       <Project>{464EB640-725A-44ED-8237-9EE7D79535C8}</Project>
       <Name>Booker.Database</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Booker.Index\Booker.Index.csproj">
-      <Project>{9104808C-D35E-4A3E-9FF4-EBEFD0114554}</Project>
-      <Name>Booker.Index</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Booker.Owin\Booker.Owin.csproj">
       <Project>{44EE1454-DD73-438D-9051-99FBA997F246}</Project>
       <Name>Booker.Owin</Name>
