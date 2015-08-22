@@ -1,27 +1,31 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using iBoxDB;
 using iBoxDB.LocalServer;
 using System.IO;
 using Booker.Database.Model;
 using Booker.Database;
+using NUnit.Framework;
+
+
 namespace Booker.Test
 {
-    [TestClass]
+	[TestFixture ()]
     public class iBoxTest
     {
 
-        [TestMethod]
+        [Test]
         public void CreateDbTest()
         {
             var path = "ibox";
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
-            var server = new DB(path);
-
+			using (var server = new DB(path)){
+				var db = server.Open ();
+				Assert.IsTrue (db != null);
+			}
         }
 
-        [TestMethod]
+        [Test]
         public void CreateTable()
         {
             var path = "ibox";
@@ -32,12 +36,13 @@ namespace Booker.Test
             {
                 var config = server.GetConfig();
                 config.EnsureTable<Book>(TableName.Books, "id");
-                var db = server.Open();
+				var db = server.Open();
+				Assert.IsTrue (db != null);
             }
         }
 
 
-        [TestMethod]
+        [Test]
         public void InsertData()
         {
             var path = "ibox";
@@ -59,7 +64,7 @@ namespace Booker.Test
 
         }
 
-        [TestMethod]
+        [Test]
         public void FindData()
         {
             var path = "ibox";
@@ -72,12 +77,19 @@ namespace Booker.Test
                 config.EnsureTable<Book>(TableName.Books, "id");
                 var db = server.Open();
 
-                var book = db.SelectKey<Book>(TableName.Books, "1");
+				var book = db.SelectKey<Book>(TableName.Books, "1");
+				if (book == null) {
+					db.Insert<Book> (TableName.Books, new Book () {
+						id = "1",
+						name = "book1"
+					});
+				}
+                book = db.SelectKey<Book>(TableName.Books, "1");
                 Assert.AreNotEqual(book, null);
             }
         }
 
-        [TestMethod]
+        [Test]
         public void UpdateData()
         {
             var path = "ibox";
@@ -90,19 +102,25 @@ namespace Booker.Test
                 var config = server.GetConfig();
                 config.EnsureTable<Book>(TableName.Books, "id");
                 var db = server.Open();
-
+				var book = db.SelectKey<Book>(TableName.Books, "1");
+				if (book == null) {
+					db.Insert<Book> (TableName.Books, new Book () {
+						id = "1",
+						name = "book1"
+					});
+				}
                 db.Update<Book>(TableName.Books, "1", new Book() { 
                     id = "1",
                     name = updateName
                 });
 
 
-                var book = db.SelectKey<Book>(TableName.Books, "1");
+                book = db.SelectKey<Book>(TableName.Books, "1");
                 Assert.AreEqual(book.name, updateName);
             }
         }
 
-        [TestMethod]
+        [Test]
         public void RemoveData()
         {
             var path = "ibox";
