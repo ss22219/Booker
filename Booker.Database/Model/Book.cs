@@ -9,6 +9,9 @@ namespace Booker.Database.Model
             id = ObjectId.NewObjectId();
         }
         public string name { get; set; }
+
+        public string author { get; set; }
+
         public string id { get; set; }
     }
 }

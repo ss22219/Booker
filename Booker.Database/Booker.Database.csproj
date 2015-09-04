@@ -40,7 +40,9 @@
   <ItemGroup>
     <Compile Include="Interface\IBaseDb.cs" />
     <Compile Include="Interface\IBookDb.cs" />
+    <Compile Include="Interface\IChapterDb.cs" />
     <Compile Include="Model\Book.cs" />
+    <Compile Include="Model\Chapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TableName.cs" />
   </ItemGroup>

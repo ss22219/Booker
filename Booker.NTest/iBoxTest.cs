@@ -14,7 +14,7 @@ namespace Booker.Test
     {
 
         [Test]
-        public void CreateDbTest()
+        public void iBoxTestCreateDbTest()
         {
             var path = "ibox";
             if (!Directory.Exists(path))
@@ -26,7 +26,7 @@ namespace Booker.Test
         }
 
         [Test]
-        public void CreateTable()
+        public void iBoxTestCreateTable()
         {
             var path = "ibox";
             if (!Directory.Exists(path))
@@ -43,7 +43,7 @@ namespace Booker.Test
 
 
         [Test]
-        public void InsertData()
+        public void iBoxTestInsertData()
         {
             var path = "ibox";
             if (!Directory.Exists(path))
@@ -65,7 +65,7 @@ namespace Booker.Test
         }
 
         [Test]
-        public void FindData()
+        public void iBoxTestFindData()
         {
             var path = "ibox";
             if (!Directory.Exists(path))
@@ -90,7 +90,7 @@ namespace Booker.Test
         }
 
         [Test]
-        public void UpdateData()
+        public void iBoxTestUpdateData()
         {
             var path = "ibox";
             var updateName = "book_updated";
@@ -121,7 +121,7 @@ namespace Booker.Test
         }
 
         [Test]
-        public void RemoveData()
+        public void iBoxTestRemoveData()
         {
             var path = "ibox";
             if (!Directory.Exists(path))
