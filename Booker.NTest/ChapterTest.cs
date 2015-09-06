@@ -3,12 +3,7 @@ using Booker.Database.iBoxDB;
 using Booker.Database.Model;
 using iBoxDB.LocalServer;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Booker.NTest
 {

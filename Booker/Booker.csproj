@@ -68,9 +68,13 @@
     <None Include="packages.config" />
     <None Include="app.config" />
     <None Include="content\style.css" />
+    <None Include="views\collection\index.cshtml" />
     <None Include="views\index\index.cshtml" />
     <None Include="views\status\404.cshtml" />
     <None Include="scripts\script.js" />
+    <None Include="views\status\back.cshtml" />
+    <None Include="views\user\login.cshtml" />
+    <None Include="views\user\regist.cshtml" />
     <None Include="views\_layout.cshtml" />
   </ItemGroup>
   <ItemGroup>

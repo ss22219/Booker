@@ -7,16 +7,9 @@ namespace Booker.Database.Model
         Image
     }
 
-    public class Chapter
+    public class Chapter : ModelBase
     {
-        public Chapter()
-        {
-            id = ObjectId.NewObjectId();
-        }
-
         public string name { get; set; }
-
-        public string id { get; set; }
 
         public string bookid { get; set; }
 

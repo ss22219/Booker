@@ -10,6 +10,7 @@ using System.IO;
 using Booker.Database.Model;
 using Booker.Database;
 using System.Reflection;
+using Nancy.Session;
 
 
 namespace Booker
@@ -22,6 +23,8 @@ namespace Booker
 			base.ApplicationStartup(container, pipelines);
 			StaticConfiguration.Caching.EnableRuntimeViewUpdates = true;
 			StaticConfiguration.DisableErrorTraces = false;
+
+            CookieBasedSessions.Enable(pipelines);
 		}
 
 		protected override void ConfigureApplicationContainer(TinyIoCContainer container)
@@ -32,7 +35,9 @@ namespace Booker
 
 			//mongodb
 			//container.Register(typeof(MongoDatabase), (cContainer, overloads) => Database);
-			container.Register(typeof(IBookDb),typeof(BookDb));
+
+            container.Register(typeof(IBookDb), typeof(BookDb));
+            container.Register(typeof(IUserDb), typeof(UserDb));
 		}
 
 		protected override void ConfigureConventions(NancyConventions nancyConventions)
@@ -54,7 +59,9 @@ namespace Booker
 
 				var server = new DB(dbPath);
 				var config = server.GetConfig();
-				config.EnsureTable<Book>(TableName.Books, "id");
+                config.EnsureTable<Book>(TableName.Books, "id");
+                config.EnsureTable<User>(TableName.Users, "username");
+                config.EnsureTable<BookCollection>(TableName.BookCollections, "id");
 
 				var db = server.Open();
 				return db;

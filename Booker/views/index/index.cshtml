@@ -4,5 +4,6 @@
 }
 books count:@Model.Count
 @foreach (var book in Model) {
+	<p>id: @book.id</p>
 	<p>name: @book.name</p>
 }

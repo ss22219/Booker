@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Booker.Database.Interface
 {
@@ -11,5 +12,7 @@ namespace Booker.Database.Interface
         void Update(T data);
         
         T Get(K id);
+
+        List<T> Where(string field, string value);
     }
 }

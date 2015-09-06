@@ -39,10 +39,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interface\IBaseDb.cs" />
+    <Compile Include="Interface\IBookCollectionDb.cs" />
     <Compile Include="Interface\IBookDb.cs" />
     <Compile Include="Interface\IChapterDb.cs" />
+    <Compile Include="Interface\IUserDb.cs" />
     <Compile Include="Model\Book.cs" />
+    <Compile Include="Model\BookCollection.cs" />
     <Compile Include="Model\Chapter.cs" />
+    <Compile Include="Model\ModelBase.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TableName.cs" />
   </ItemGroup>

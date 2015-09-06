@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "_layout.cshtml";
+    ViewBag.Title = "书架";
+}
+@foreach (var item in Model) { 
+    
+    <div>
+        <p><label>书名：</label>@item.Value.name</p>
+        <p><label>作者：</label>@item.Value.author</p>
+        <p><label>最新章节：</label>@item.Value.lastchapter</p>
+        <p><a href="/collection/continue/@item.Key.id">继续阅读</a>  <a href="/collection/del/@item.Key.id?returnurl=@Request.Url">移除</a></p>
+    </div>
+}

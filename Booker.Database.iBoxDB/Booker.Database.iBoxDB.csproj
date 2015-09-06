@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="iBoxDB\BaseDb.cs" />
+    <Compile Include="iBoxDB\BookCollectionDb.cs" />
     <Compile Include="iBoxDB\BookDb.cs" />
     <Compile Include="iBoxDB\ChapterDb.cs" />
+    <Compile Include="iBoxDB\UserDb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
