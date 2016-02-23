@@ -37,10 +37,14 @@
     <Reference Include="Nancy">
       <HintPath>..\packages\Nancy.1.2.0\lib\net40\Nancy.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Module\GameModule.cs" />
     <Compile Include="Module\BaseLoginModule.cs" />
     <Compile Include="Module\BaseModule.cs" />
     <Compile Include="Module\BaseForeModule.cs" />
@@ -65,6 +69,10 @@
   </Target>
   -->
   <ItemGroup>
+    <ProjectReference Include="..\Booker.Common\Booker.Common.csproj">
+      <Project>{10476060-e282-48ac-9140-3e6594a118a9}</Project>
+      <Name>Booker.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Booker.Database\Booker.Database.csproj">
       <Project>{464EB640-725A-44ED-8237-9EE7D79535C8}</Project>
       <Name>Booker.Database</Name>

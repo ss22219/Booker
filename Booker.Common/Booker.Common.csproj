@@ -38,6 +38,44 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Json\AvatarInfo.cs" />
+    <Compile Include="Json\BaseResponse.cs" />
+    <Compile Include="Json\CardCsvData.cs" />
+    <Compile Include="Json\CardFuction.cs" />
+    <Compile Include="Json\ConnectPost.cs" />
+    <Compile Include="Json\ConnectReceiveData.cs" />
+    <Compile Include="Json\ConnectReturn.cs" />
+    <Compile Include="Json\Const.cs" />
+    <Compile Include="Json\Explore.cs" />
+    <Compile Include="Json\FPRewardInfo.cs" />
+    <Compile Include="Json\Gacha.cs" />
+    <Compile Include="Json\HomeBannerInfo.cs" />
+    <Compile Include="Json\HomeShowReceiveData.cs" />
+    <Compile Include="Json\ItemExchangeInfo.cs" />
+    <Compile Include="Json\ItemInfo.cs" />
+    <Compile Include="Json\JobInfo.cs" />
+    <Compile Include="Json\LoginBonusBeginnerInfo.cs" />
+    <Compile Include="Json\LoginBonusDailyInfo.cs" />
+    <Compile Include="Json\LoginBonusTotalInfo.cs" />
+    <Compile Include="Json\LoginPost.cs" />
+    <Compile Include="Json\LoginReturn.cs" />
+    <Compile Include="Json\LoginSDKPost.cs" />
+    <Compile Include="Json\PresentBox.cs" />
+    <Compile Include="Json\PushOption.cs" />
+    <Compile Include="Json\QuestClearInfo.cs" />
+    <Compile Include="Json\QuestInfo.cs" />
+    <Compile Include="Json\QuestReceiveInfo.cs" />
+    <Compile Include="Json\ResultRewardInfo.cs" />
+    <Compile Include="Json\RevisionInfo.cs" />
+    <Compile Include="Json\Reward.cs" />
+    <Compile Include="Json\RewardInfo.cs" />
+    <Compile Include="Json\TeamBattleSolo.cs" />
+    <Compile Include="Json\TeamBattleSoloShowReceiveData.cs" />
+    <Compile Include="Json\UnlockBattleNotificationInfo.cs" />
+    <Compile Include="Json\UnlockNotificationInfo.cs" />
+    <Compile Include="Json\UnlockStoryNotificationInfo.cs" />
+    <Compile Include="Json\UserCreateReceiveData.cs" />
+    <Compile Include="Json\UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ObjectId.cs" />
   </ItemGroup>
