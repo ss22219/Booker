@@ -65,6 +65,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <None Include="content\cpk_file.csv" />
     <None Include="packages.config" />
     <None Include="app.config" />
     <None Include="content\style.css" />
@@ -88,5 +89,8 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="content\cpk_patch.txt" />
+    <Content Include="content\patch.txt" />
+  </ItemGroup>
 </Project>
