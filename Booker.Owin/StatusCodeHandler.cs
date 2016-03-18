@@ -36,6 +36,7 @@ namespace Booker
 		/// <param name="context"></param>
 		public void Handle(HttpStatusCode statusCode, NancyContext context)
 		{
+            Console.WriteLine(context.Trace.TraceLog.ToString());
 			var response = viewRender.RenderView(context, "status/404");
 			response.StatusCode = statusCode == HttpStatusCode.NotFound ? HttpStatusCode.OK : statusCode;
 			context.Response = response;
