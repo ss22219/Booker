@@ -23,7 +23,6 @@ namespace Booker
 			base.ApplicationStartup(container, pipelines);
 			StaticConfiguration.Caching.EnableRuntimeViewUpdates = true;
 			StaticConfiguration.DisableErrorTraces = false;
-
             CookieBasedSessions.Enable(pipelines);
 		}
 
@@ -42,9 +41,11 @@ namespace Booker
 
 		protected override void ConfigureConventions(NancyConventions nancyConventions)
 		{
+            Console.WriteLine("SiteRoot:{0}", this.RootPathProvider.GetRootPath());
 			base.ConfigureConventions(nancyConventions);
 			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("scripts"));
-			nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("content"));
+            nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("content"));
+            nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("html"));
 		}
 
 		public DB.AutoBox BoxDatabase
