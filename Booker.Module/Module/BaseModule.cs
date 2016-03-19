@@ -8,7 +8,18 @@ namespace Booker
     /// </summary>
     public class BaseModule : NancyModule
     {
-        public BaseModule() {
+        public BaseModule()
+        {
+            After += ctx =>
+            {
+                if (ctx.Response.ContentType == "text/html")
+                    ctx.Response.ContentType = "text/html; charset=utf-8";
+            };
+        }
+
+        public BaseModule(string modulePath)
+            : base(modulePath)
+        {
             After += ctx =>
             {
                 if (ctx.Response.ContentType == "text/html")

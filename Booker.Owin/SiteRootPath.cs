@@ -18,6 +18,7 @@ namespace Booker
         static SiteRootPath()
         {
             var pcDebugPath = @"C:\Users\ss222\Documents\Booker\Booker";
+            var projectPath = @"../../";
             var appPath = AppDomain.CurrentDomain.BaseDirectory;
             var evnPath = Environment.CurrentDirectory;
             var foxPath = AppDomain.CurrentDomain.GetData(".appPath") == null ? "" : AppDomain.CurrentDomain.GetData(".appPath").ToString();
@@ -29,6 +30,8 @@ namespace Booker
                 _rootPath = appPath;
             else if (Directory.Exists(Path.Combine(foxPath, "views")))
                 _rootPath = appPath;
+            else if (Directory.Exists(Path.Combine(projectPath, "views")))
+                _rootPath = projectPath;
             else
                 File.WriteAllText("path.log", string.Format("appPath:{0}\r\nevnPath:{1}", appPath, evnPath));
 
