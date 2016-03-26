@@ -103,6 +103,10 @@ mkdir $(TargetDir)\product\bin
 copy $(TargetDir)\*.dll $(TargetDir)\product\bin
 copy $(TargetDir)\*.dll $(TargetDir)\product\bin
 copy $(TargetDir)\$(TargetFileName)* $(TargetDir)\product
+
+xcopy $(ProjectDir)\content $(TargetDir)\content /D/Y/I/E
+xcopy $(ProjectDir)\scripts $(TargetDir)\scripts /D/Y/I/E
+xcopy $(ProjectDir)\html $(TargetDir)\html /D/Y/I/E
 xcopy $(ProjectDir)\content $(TargetDir)\product\content /D/Y/I/E
 xcopy $(ProjectDir)\scripts $(TargetDir)\product\scripts /D/Y/I/E
 xcopy $(ProjectDir)\html $(TargetDir)\product\html /D/Y/I/E
