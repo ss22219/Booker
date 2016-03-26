@@ -1,3 +1,1 @@
- EnableNuGetPackageRestore=true \
- MONO_IOMAP=case \
- xbuild
+EnableNuGetPackageRestore=true MONO_IOMAP=case xbuild
