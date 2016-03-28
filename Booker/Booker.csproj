@@ -33,6 +33,12 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FastCgiNet">
+      <HintPath>..\packages\FastCgiNet.0.1.0\lib\net40\FastCgiNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Fos">
+      <HintPath>..\packages\Fos.0.1.0\lib\net40\Fos.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
