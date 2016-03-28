@@ -16,7 +16,12 @@ namespace Booker
                 FastCgi(port);
             }
             else
-                SelfHost();
+            {
+                int port = 0;
+                if (args.Length < 1 || !int.TryParse(args[0], out port))
+                    port = 8080;
+                SelfHost(port);
+            }
         }
 
         public static void FastCgi(int port)
@@ -29,9 +34,9 @@ namespace Booker
             }
         }
 
-        public static void SelfHost()
+        public static void SelfHost(int port)
         {
-            string url = "http://+:8080";
+            string url = "http://+:" + port;
             WebApp.Start<Startup>(url);
             Console.WriteLine("server is start on {0}", url);
             Console.WriteLine("press enter to exit");
